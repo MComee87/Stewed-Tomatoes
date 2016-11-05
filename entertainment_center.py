@@ -1,6 +1,8 @@
 import fresh_tomatoes                                                           
 import media
 
+# create a variable for each movie to be included in website.
+# make sure to include a title, storyline, poster image url and trailer url.
 toy_story = media.Movie("Toy Story", "A story of a boy and his toys that come"
             "to life",
             "http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
@@ -41,8 +43,9 @@ how_to_train_your_dragon = media.Movie("How to Train Your Dragon",
             "https://upload.wikimedia.org/wikipedia/en/thumb/9/99/How_to_Train_Your_Dragon_Poster.jpg/220px-How_to_Train_Your_Dragon_Poster.jpg", #NOQA
             "https://www.youtube.com/watch?v=VEcM3rbnwQ4")                    
                     
-
+# create a movies array containing the variable names for each movie.
 movies = [toy_story, avatar, school_of_rock, ratatouille, midnight_in_paris,
           hunger_games, rio_2, frozen, how_to_train_your_dragon]
 
+# call the fresh tomatoes module to create the index.html file.
 fresh_tomatoes.open_movies_page(movies)
